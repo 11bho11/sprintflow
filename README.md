@@ -1,5 +1,7 @@
 # SprintFlow
 
+Building and selling a hackathon idea in a few hours isn't easy. SprintFlow solves that.
+
 SprintFlow is a Claude Code plugin for executing hackathon workflows. It guides you from hackathon brief to working submission through structured commands for ideation,  planning, and build execution. 
 
 Designed for:
