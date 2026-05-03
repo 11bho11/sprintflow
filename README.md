@@ -36,7 +36,8 @@ SprintFlow is a chain of slash commands. Each command produces a planning artifa
 | `/pivot` | Archives existing artifacts and resets to the right phase when direction changes |
 | `/sync` | Mid-hackathon team status summary — what's done, blocked, and at risk *(team only)* |
 
-### Mermaid Diagram
+### Command Flow
+
 ```mermaid
 flowchart TD
     ON(["/onboard"]) --> ID(["/ideation"])
@@ -114,11 +115,20 @@ If you're on a team, `/onboard` also captures team composition and skill distrib
 
 
 ### `/ideation`
-Brainstorm and validate your idea. This command is **re-entrant** — you can run it multiple times across `/clear` cycles without losing progress. Each session reads from `docs/ideation-log.md` and resumes.
+Brainstorm partner and adversarial judge in one command. This is the most rigorous command in the chain — every serious idea gets two passes before you're allowed to commit to it.
 
-Every idea gets checked against the hackathon's specific judging criteria, timeline, and constraints before you commit to it. When you're ready to land on an idea, `/ideation` produces a written verdict explaining why that idea is right for this hackathon.
+**Brainstorm pass**: open generation, research into adjacent projects, alignment checks across five dimensions: judging criteria fit, timeline feasibility, constraint compliance, demo-ability (is there a wow moment?), and originality.
 
-If a brainstorm session runs long, the agent will prompt you to `/clear` and restart — all ideas are preserved in the log and picked up cleanly next session.
+**Adversarial judge pass**: runs on every idea you're serious about, before commitment. Four challenges, each framed the way a skeptical judge would raise them:
+
+- *Problem validity* — does this problem actually exist at the scale you're implying, or is this a solution looking for a problem?
+- *The obvious alternative* — why wouldn't someone just use [spreadsheet / Google / existing app]? If you can't answer this sharply, the idea isn't ready.
+- *Founder bias* — you're assuming the judge shares your context, enthusiasm, and understanding of the problem. They don't. What are you taking for granted?
+- *Demo integrity* — does this only work because you set it up perfectly? What does a judge see if something goes slightly wrong?
+
+The adversarial pass is not optional and is not softened. Finding the fatal flaw here saves every hour that follows. The output is a committed idea with a recorded demo moment and a known vulnerability — a specific objection and how to address it in the submission.
+
+This command is **re-entrant** — run it multiple times across `/clear` cycles. All ideas and challenge results are preserved in `docs/ideation-log.md`.
 
 
 ### `/scope`
