@@ -1,6 +1,6 @@
 # SprintFlow
 
-SprintFlow is a general-purpose workflow tool designed for any hackathon: different themes, different judging rubrics, different time constraints, solo or team. It is a Claude Code plugin that guides you from hackathon brief to working submission — through structured ideation, spec-driven planning, and time-aware build execution.
+SprintFlow is a Claude Code plugin designed for any hackathon. It guides you from hackathon brief to working submission — through structured ideation, spec-driven planning, and time-aware build execution. It is designed as a general-purpose tool designed for any hackathon: different themes, different judging rubrics, different time constraints, solo or team.
 
 Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/) and [ElevenLabs' hackathon submission guide](https://hacks.elevenlabs.io/guide), 
 
@@ -11,12 +11,48 @@ Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/) and
 SprintFlow is a chain of slash commands. Each command produces a planning artifact in your `docs/` folder. Each subsequent command reads those artifacts, so context builds up progressively across sessions — you run `/clear` between commands to keep the AI performing at full capacity, and the docs carry the state forward.
 
 ```
-/onboard → /ideation → /scope → /prd → /spec → /checklist → /build → /iterate
+/onboard → /ideation → /scope → /prd → /spec → /checklist → /build → /iterate → /submit
 ```
 
 At any point:
 - `/pivot` — change your idea or direction mid-workflow without losing prior work
 - `/sync` — team check-in summary (team projects only)
+
+
+```mermaid
+flowchart TD
+    ON(["/onboard"]) --> ID(["/ideation"])
+
+    ID -- "standard / deep" --> SC(["/scope"])
+    SC --> PR(["/prd"])
+    PR --> SP(["/spec"])
+
+    ID -- "sprint track" --> BR(["/brief"])
+    BR --> SP
+
+    SP --> CL(["/checklist"])
+    CL --> BU(["/build"])
+    BU --> IT(["/iterate"])
+    IT --> SU(["/submit"])
+
+    BU -. "team only" .-> SY(["/sync"])
+    IT -. "team only" .-> SY
+
+    BU -. "change direction" .-> PV(["/pivot"])
+    IT -. "change direction" .-> PV
+
+    PV -- "new idea" --> ID
+    PV -- "new scope" --> SC
+    PV -- "new approach" --> SP
+    PV -- "new build plan" --> CL
+
+    style ON fill:#EEEDFE,stroke:#534AB7,color:#3C3489
+    style SU fill:#E1F5EE,stroke:#0F6E56,color:#085041
+    style PV fill:#FAECE7,stroke:#993C1D,color:#712B13
+    style SY fill:#E6F1FB,stroke:#185FA5,color:#0C447C
+    style BR fill:#FAEEDA,stroke:#854F0B,color:#633806
+```
+
 
 ---
 
