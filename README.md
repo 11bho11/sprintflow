@@ -23,7 +23,7 @@ At any point:
 ## Install
 
 ```
-/plugin marketplace add yourusername/sprintflow
+/plugin marketplace add 11bho11/sprintflow
 ```
 
 Or via the Claude Code plugin UI: **Discover** tab → search `sprintflow`.
