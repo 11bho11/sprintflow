@@ -1,8 +1,8 @@
 # SprintFlow
 
-A Claude Code plugin that guides you from hackathon brief to working submission — through structured ideation, spec-driven planning, and time-aware build execution.
+SprintFlow is a general-purpose workflow tool designed for any hackathon: different themes, different judging rubrics, different time constraints, solo or team. It is a Claude Code plugin that guides you from hackathon brief to working submission — through structured ideation, spec-driven planning, and time-aware build execution.
 
-Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/), SprintFlow is a general-purpose rebuild designed for any hackathon: different themes, different judging rubrics, different time constraints, solo or team.
+Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/) and [ElevenLabs' hackathon submission guide](https://hacks.elevenlabs.io/guide), 
 
 ---
 
@@ -74,7 +74,7 @@ Produces: `docs/prd.md`
 ---
 
 ### `/spec`
-Builds the technical blueprint with you. Stack selection is driven by a decision framework — not a fixed pattern library — that accounts for hackathon constraints, required technologies, team skill sets, and available time. Every proposed library or API gets verified against current documentation before it appears in the spec.
+Builds the technical blueprint with you. Stack selection is driven by a decision framework that accounts for hackathon constraints, required technologies, team skill sets, and available time. Every proposed library or API gets verified against current documentation before it appears in the spec.
 
 Produces: `docs/spec.md`
 
@@ -160,9 +160,8 @@ These aren't throwaway scaffolding. They're the decision record for your project
 
 ## Designed for
 
-- Solo hackers and teams up to ~5 people
-- Any hackathon platform (Devpost, Devfolio, HackerEarth, etc.)
-- Any theme, track, or judging rubric
+- Solo hackers and teams up to ~4 people
+- Any hackathon theme, track, or judging rubric
 - Any experience level — stack recommendations adapt to what you know
 
 ---
