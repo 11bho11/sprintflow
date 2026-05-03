@@ -1,8 +1,14 @@
 # SprintFlow
 
-SprintFlow is a Claude Code plugin designed for any hackathon. It guides you from hackathon brief to working submission through structured ideation, spec-driven planning, and time-aware build execution. Designed as a general-purpose tool for solo hackers or teams.
+SprintFlow is a Claude Code plugin for executing hackathon workflows. It guides you from hackathon brief to working submission through structured commands for ideation,  planning, and build execution. 
 
-Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/) and [ElevenLabs' hackathon submission guide](https://hacks.elevenlabs.io/guide), 
+Designed for:
+
+- Solo hackers and teams up to ~4 people
+- Any hackathon theme
+- Any experience level (preferably beginners or intermediates)
+
+Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/), [ElevenLabs' hackathon submission guide](https://hacks.elevenlabs.io/guide), spec-driven development principles, and personal experience. We're entering a time where in order for humans to maximise output, we focus on the high-level categories and take oversight over agents, who are delegated the low-level details and under-the-hood work. Here the idea is you work with your agent to design and write a detailed step-by-step hackathon plan of what to do and leave the agent to do it (the way it does best).
 
 ### Install
 
@@ -76,18 +82,12 @@ docs/
 ├── spec.md                 ← architecture, stack, file structure, data flow
 └── checklist.md            ← sequenced build steps with owners and time budget
 ```
-These aren't throwaway scaffolding. They're the decision record for your project — useful for post-hackathon retrospectives, portfolio writeups, or starting the next one faster.
+These are the decision records for your project — useful for guiding your hackathon project and the agent on what to build.
 
-### Designed for
-
-
-- Solo hackers and teams up to ~4 people
-- Any hackathon theme, track, or judging rubric
-- Any experience level — stack recommendations adapt to what you know
 
 ### Build tracks
 
-SprintFlow sets a build track during `/onboard` based on your available hours:
+SprintFlow sets a build track during `/onboard` based on your available hacking timeframe:
 
 | Track | Hours | Planning depth |
 |-------|-------|----------------|
