@@ -1,6 +1,6 @@
 # SprintFlow
 
-SprintFlow is a Claude Code plugin designed for any hackathon. It guides you from hackathon brief to working submission — through structured ideation, spec-driven planning, and time-aware build execution. Designed as a general-purpose tool for solo hackers or teams.
+SprintFlow is a Claude Code plugin designed for any hackathon. It guides you from hackathon brief to working submission through structured ideation, spec-driven planning, and time-aware build execution. Designed as a general-purpose tool for solo hackers or teams.
 
 Inspired by [Devpost's hackathon-in-a-plugin](https://learn-ai.devpost.com/) and [ElevenLabs' hackathon submission guide](https://hacks.elevenlabs.io/guide), 
 
