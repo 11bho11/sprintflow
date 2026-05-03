@@ -24,11 +24,8 @@ At any point:
 
 ```
 /plugin marketplace add 11bho11/sprintflow
+/plugin install sprintflow
 ```
-
-Or via the Claude Code plugin UI: **Discover** tab → search `sprintflow`.
-
-Requires Claude Code with a Claude Pro or Max subscription.
 
 ---
 
