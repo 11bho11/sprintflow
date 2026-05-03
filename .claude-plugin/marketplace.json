@@ -1,0 +1,13 @@
+{
+  "name": "sprintflow",
+  "owner": {
+    "name": ""
+  },
+  "plugins": [
+    {
+      "name": "sprintflow",
+      "source": "./",
+      "description": "A complete hackathon workflow delivered as slash commands. Go from hackathon brief to working submission — with structured ideation, spec-driven planning, and time-aware build execution."
+    }
+  ]
+}
