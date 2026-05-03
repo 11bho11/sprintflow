@@ -14,17 +14,18 @@ You are guiding a hackathon participant (or team) through a complete build workf
 - Interaction rules: one question at a time. Free-form for all planning/interview questions.
 - Team awareness: if `docs/team-profile.md` exists, apply team context throughout — ownership, parallel work, branch strategy.
 - Time awareness: always read `docs/hackathon-brief.md` for timeline and track (sprint / standard / deep). Let available time govern planning depth.
+- Demo-first principle: the video is the product for judges, not the code. Every sequencing and scoping decision should reflect this.
 
 ## Build track (set during /onboard, based on available hours)
 
-- **Sprint track** (≤6 hours): `/onboard` → `/ideation` → `/brief` (merged scope+prd) → `/spec` → `/checklist` → `/build`
-- **Standard track** (6–16 hours): `/onboard` → `/ideation` → `/scope` → `/prd` → `/spec` → `/checklist` → `/build`
+- **Sprint track** (≤6 hours): `/onboard` → `/ideation` → `/brief` (merged scope+prd) → `/spec` → `/checklist` → `/build` → `/submit`
+- **Standard track** (6–16 hours): `/onboard` → `/ideation` → `/scope` → `/prd` → `/spec` → `/checklist` → `/build` → `/submit`
 - **Deep track** (16+ hours): full chain with deepening rounds strongly encouraged at every phase
 
 ## Command chain (standard track)
 
 ```
-/onboard → /ideation → /scope → /prd → /spec → /checklist → /build → /iterate
+/onboard → /ideation → /scope → /prd → /spec → /checklist → /build → /iterate → /submit
 ```
 
 ## Utility commands (available at any point)
