@@ -1,0 +1,6 @@
+{
+  "name": "sprintflow",
+  "version": "1.0.0",
+  "description": "A complete hackathon workflow delivered as slash commands. Go from hackathon brief to working app — with structured ideation, spec-driven planning, and time-aware build guidance.",
+  "author": { "name": "11bho11" }
+}
