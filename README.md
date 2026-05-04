@@ -85,7 +85,7 @@ docs/
 ├── spec.md                 ← architecture, stack, file structure, data flow
 └── checklist.md            ← sequenced build steps with owners and time budget
 ```
-These are the decision records for your project — useful for guiding your hackathon project and the agent on what to build.
+These are the decision records for your project — useful for guiding your hackathon project and your agent on what to build.
 
 
 ### Build tracks
@@ -105,13 +105,10 @@ You can override the track at any point.
 ## Commands
 
 ### `/onboard`
-Entry point. Captures two things before any planning begins:
+Your entry point to the hack. It captures two things before any planning begins:
 
-**Hackathon brief** — name, theme, judging criteria and weights, timeline, rules and constraints, submission requirements. This governs everything downstream: how deep the planning goes, which ideas are viable, what the build must produce.
-
-**Participant profile** — technical experience, prior hackathon history, goals for this event.
-
-If you're on a team, `/onboard` also captures team composition and skill distribution into `docs/team-profile.md`.
+- **Hackathon brief**: name, theme, judging criteria and weights, timeline, rules and constraints, submission requirements. This governs everything downstream: how deep the planning goes, which ideas are viable, what the build must produce.
+- **Participant profile**: technical experience, prior hackathon history, goals for this event. If you're on a team, `/onboard` also captures team composition and skill distribution into `docs/team-profile.md`.
 
 
 ### `/ideation`
@@ -119,7 +116,7 @@ Brainstorm partner and adversarial judge in one command. This is the most rigoro
 
 **Brainstorm pass**: open generation, research into adjacent projects, alignment checks across five dimensions: judging criteria fit, timeline feasibility, constraint compliance, demo-ability (is there a wow moment?), and originality.
 
-**Adversarial judge pass**: runs on every idea you're serious about, before commitment. Four challenges, each framed the way a skeptical judge would raise them:
+**Adversarial judge pass**: runs on every idea you're serious about before commitment. Four challenges, each framed the way a skeptical judge would raise them:
 
 - *Problem validity* — does this problem actually exist at the scale you're implying, or is this a solution looking for a problem?
 - *The obvious alternative* — why wouldn't someone just use [spreadsheet / Google / existing app]? If you can't answer this sharply, the idea isn't ready.
@@ -132,7 +129,7 @@ This command is **re-entrant** — run it multiple times across `/clear` cycles.
 
 
 ### `/scope`
-Takes the committed idea and makes it concrete: sharp user definition, specific problem statement, realistic scope given available time, and explicit cuts. No new ideas — pure sharpening.
+Takes the committed idea and makes it concrete: sharp user definition, specific problem statement, realistic scope given available time, and explicit cuts. 
 
 *Not used in sprint track (≤6 hours) — use `/brief` instead, which merges scope and PRD.*
 
@@ -163,12 +160,10 @@ At any point during build you can call `/iterate` without finishing the checklis
 
 
 ### `/iterate`
-Works in two modes:
+Iterate on your current build whenever it's useful. Works in two modes:
 
 - **Mid-build**: called after any checklist item to adjust something before continuing. Assesses impact on remaining items and time before making changes.
 - **Post-build**: called after all items are complete to polish, add a feature, or fix something before submission. Opens with a plan-vs-reality pass — compares what was built against the original PRD acceptance criteria.
-
-No gate on checklist completion. Call it whenever it's useful.
 
 
 ### `/pivot` — utility
